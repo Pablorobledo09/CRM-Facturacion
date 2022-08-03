@@ -110,6 +110,9 @@ form .buttons button , .Anterior{
 
 .footercontenedor{
   border: 2px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
 width: 100%;
 margin: 0;
 display: flex;
@@ -120,11 +123,14 @@ flex-wrap: wrap;
    display: flex;
    justify-content: space-between;
 
+ 
+
 }
 
-.contenedoreslistas h4{
-   display: flex;
-   align-content: center;
+.contenedoreslistas {
+  margin-bottom: -6vh;
+  position: relative;
+  left: 10vw;
   
   
 
@@ -149,6 +155,13 @@ flex-wrap: wrap;
 #copy{
    display: flex;
    justify-content: center;
-   justify-content: end;
+   
   
 }
+
+.contenedordivfooter h2{ 
+   margin: 8px;
+
+
+}
+
