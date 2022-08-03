@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
+*{
+   margin: 14px;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body{
+   min-height: 100vr;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: slategrey ;
+}
+.container{
+   position: relative;
+   max-width: 1000px;
+   width: 100%;
+   border-radius: 5px;
+   padding: 15px;
+   margin:0 15px;
+   background-color: white;
+   box-shadow: 0 5px 10px black;
+}
+.container header{
+   position: relative;
+   font-size: 45px;
+   font-weight: 600;
+   color:darkslategray;
+}
+.container form{
+   position: relative;
+   margin-top: 45px;
+   min-height: 630px;
+   background-color:white;
+}
+.container form.form{
+   position: absolute;
+}
+
+.container form .title{
+   display: block;
+   margin-bottom: 10px;
+   font-size: 35px;
+   font-weight: 500;
+   margin: 5x ;
+   color: black
+}
+.container form .fields{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+form .fields .input-field{
+   display: flex;
+   width: calc(100% / 3 - 15px);
+   flex-direction: column;
+   margin: 25px 0;
+}
+.input-field label{
+   font-size: 15px;
+   font-weight: 500;
+   color:black
+}
+.input-field input{
+   outline: none;
+   font-size: 15px;
+   font-weight: 350;
+   color: cadetblue;
+   border-radius: 3px;
+   border: 3px solid gainsboro;
+   height: 50px;
+   margin: 8px 0;
+}
+/*.container form button , .Anterior {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   max-width: 200px;
+   width: 100%;
+   border: none;
+   outline: none;
+   color:white;
+   border-radius: 10px;
+   margin: 30px 0;
+   background-color: gray;
+   transition: all 0.3s linear;
+   cursor: pointer;
+}
+.container form button 
+.container form .Anterior{
+   font-size: 14px;
+   font-weight: 400;
+}
+form button i,
+form .Anterior{
+   margin: 0 5px;
+}
+
+form .buttons{
+   display: flex;
+   align-items: center;
+}
+form .buttons button , .Anterior{
+   margin-right: 15px;
+}
+
