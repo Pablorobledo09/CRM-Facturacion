@@ -6,7 +6,7 @@
    font-family: 'Poppins', sans-serif;
 }
 body{
-   min-height: 100vr;
+   min-height: 80vr;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -14,7 +14,7 @@ body{
 }
 .container{
    position: relative;
-   max-width: 80vw;
+   max-width: 70vw;
    width: 100%;
    border-radius: 5px;
    padding: 15px;
@@ -74,6 +74,79 @@ form .fields .input-field{
    height: 50px;
    margin: 8px 0;
 }
+
+.menu {
+   top: -20px;
+   left: -20px;
+   font-family: Arial, Helvetica, sans-serif;
+   height: 10%;
+   position: fixed;
+   transition: .4s all;
+   z-index: 1;
+}
+
+.menu ul {
+   text-align: center;
+}
+
+.menu li {
+   transition: .3s all;
+   overflow: hidden;
+}
+
+.menu a{
+   text-decoration: none;
+   list-style: none;
+   transition: .3s all;
+   font-size: 0px;
+   padding: 0px;
+}
+
+.menu h2 {
+   text-align: center;
+   color: white;
+   padding: 7px;
+   padding-bottom: 7px;
+   font-size: 0px;
+}
+
+.menu img {
+   padding-top: 10px;
+   padding-left: 10px;
+}
+
+.menu:hover {
+   width: 13%;
+   height: 100%;
+   background-color: rgba(5, 33, 51, 0.98);
+}
+
+.menu:hover h2 {
+   padding: 15px;
+   font-size: 35px;
+}
+
+.menu:hover a{
+   font-size: 20px;
+   color: white;
+   display:block;
+   padding: 20px;
+}
+
+.menu:hover img {
+   height: 0px;
+}
+
+.menu:hover li {
+   border-top: 2px solid black;
+   width: 100%;
+}
+
+.menu:hover a:hover {
+   padding: 30px 0px;
+   background-color: rgba(26, 68, 100, 0.98);
+}
+
 /*.container form button , .Anterior {
    display: flex;
    align-items: center;
