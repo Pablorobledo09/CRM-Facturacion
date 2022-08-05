@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
 *{
-   margin: 14px;
+   margin: 1rem;
    padding: 0;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
 }
 body{
-   min-height: 100vr;
+   min-height: 100vw;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -14,11 +14,11 @@ body{
 }
 .container{
    position: relative;
-   max-width: 80vw;
+   max-width: 67vw;
    width: 100%;
    border-radius: 5px;
-   padding: 15px;
-   margin:0 15px;
+   padding: 1rem;
+   margin:0 1rem;
    background-color: white;
    box-shadow: 0 5px 10px black;
    overflow: hidden;
@@ -26,13 +26,13 @@ body{
 .container header{
    position: relative;
    font-size: 45px;
-   font-weight: 600;
+   font-weight: 500;
    color:darkslategray;
 }
 .container form{
    position: relative;
    margin-top: 45px;
-   min-height: 630px;
+   min-height: 40vw;
    background-color:white;
 }
 .container form.form{
@@ -42,9 +42,8 @@ body{
 .container form .title{
    display: block;
    margin-bottom: 10px;
-   font-size: 35px;
-   font-weight: 500;
-   margin: 5x ;
+   font-size: 2.1rem;
+   margin: 5px ;
    color: black
 }
 .container form .fields{
@@ -57,11 +56,10 @@ form .fields .input-field{
    display: flex;
    width: calc(100% / 3 - 15px);
    flex-direction: column;
-   margin: 25px 0;
+   margin: 1.3rem 0;
 }
 .input-field label{
-   font-size: 15px;
-   font-weight: 500;
+   font-size: 1rem;
    color:black
 }
 .input-field input{
@@ -71,8 +69,80 @@ form .fields .input-field{
    color: cadetblue;
    border-radius: 3px;
    border: 3px solid gainsboro;
-   height: 50px;
+   height: 5.5vh;
    margin: 8px 0;
+}
+
+.menu {
+   top: -20px;
+   left: -20px;
+   font-family: Arial, Helvetica, sans-serif;
+   height: 10%;
+   position: fixed;
+   transition: .4s all;
+   z-index: 1;
+}
+
+.menu ul {
+   text-align: center;
+}
+
+.menu li {
+   transition: .3s all;
+   overflow: hidden;
+}
+
+.menu a{
+   text-decoration: none;
+   list-style: none;
+   transition: .3s all;
+   font-size: 0px;
+   padding: 0px;
+}
+
+.menu h2 {
+   text-align: center;
+   color: white;
+   padding: 7px;
+   padding-bottom: 7px;
+   font-size: 0px;
+}
+
+.menu img {
+   padding-top: 10px;
+   padding-left: 10px;
+}
+
+.menu:hover {
+   width: 16.2%;
+   height: 100%;
+   background-color: rgba(5, 33, 51, 0.98);
+}
+
+.menu:hover h2 {
+   padding: 15px;
+   font-size: 35px;
+}
+
+.menu:hover a{
+   font-size: 20px;
+   color: white;
+   display:block;
+   padding: 20px;
+}
+
+.menu:hover img {
+   height: 0px;
+}
+
+.menu:hover li {
+   border-top: 2px solid black;
+   width: 100%;
+}
+
+.menu:hover a:hover {
+   padding: 30px 0px;
+   background-color: rgba(26, 68, 100, 0.98);
 }
 /*.container form button , .Anterior {
    display: flex;
@@ -107,51 +177,48 @@ form .buttons{
 form .buttons button , .Anterior{
    margin-right: 15px;
 }*/
-
+/*footer*/
 .footercontenedor{
-  border: 2px solid black;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 0px;
-width: 100%;
-margin: 0;
-display: flex;
-flex-wrap: wrap;
-}
-
-.divlistas{
+   width: 100%;
    display: flex;
-   justify-content: space-between;
-
- 
-
+   flex-wrap:wrap;
+   border: 2px solid black;
+   border-bottom: 0;
+   border-left: 0;
+   border-right: 0;
+   padding: 0;
 }
 
-.contenedoreslistas {
-  margin-bottom: -6vh;
-  position: relative;
-  left: 10vw;
-  
-  
-
+.contenedoreslistas{
+   margin: 5px;
+   position: relative;
+   margin-bottom: -6vh;
+   margin: 10px;
+   right: 0%;
 }
 
-.ul{ 
-   list-style-type: none;
+.divlistas{ 
    display: flex;
-   flex-direction: column;
+   flex-wrap: wrap;
+   margin: 10px;
 
 
 }
 
-.ul li{
-   font-size: 0.5;
-  
+.ul{
+   display: flex;
+  flex-direction: column;
+
 }
 
 .li1{
-   margin: 8px;
+   list-style-type: none;
+   font-size: 14px;
+   margin: 10px;
 }
+
+
+
 #copy{
    display: flex;
    justify-content: center;
@@ -159,9 +226,52 @@ flex-wrap: wrap;
   
 }
 
-.contenedordivfooter h2{ 
-   margin: 8px;
+.contenedordivfooter{ 
+ align-self: baseline;
 
 
 }
+/*responsive footer*/
+@media screen and (max-width:500px){
+
+   .footercontenedor{
+      position: relative;
+      right: 35%;
+      display: block;
+   }
+
+   .li1{
+      font-size: 13.5px;
+   }
+
+   #correo{
+      position: relative;
+      right: 15%;
+      font-size: 12px;
+   }
+   
+}
+
+@media  screen and (max-width:350px) {
+   .footercontenedor{
+      position: relative;
+      right: 50%;
+      display: block;
+   }
+
+   .li1{
+      font-size: 12.5px;
+   }
+
+   #correo{
+      position: relative;
+      right: 30%;
+      font-size: 12px;
+   }
+
+
+   
+}
+
+
 
