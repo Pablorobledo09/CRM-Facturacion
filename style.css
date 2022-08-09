@@ -239,7 +239,9 @@ form .buttons button , .Anterior{
       right: 35%;
       display: block;
    }
-
+.titlefooter{
+   font-size: 16px;
+}
    .li1{
       font-size: 13.5px;
    }
@@ -247,7 +249,7 @@ form .buttons button , .Anterior{
    #correo{
       position: relative;
       right: 15%;
-      font-size: 12px;
+     
    }
    
 }
@@ -255,8 +257,9 @@ form .buttons button , .Anterior{
 @media  screen and (max-width:350px) {
    .footercontenedor{
       position: relative;
-      right: 50%;
+      right: 55%;
       display: block;
+      transform: 0.3s;
    }
 
    .li1{
@@ -267,6 +270,7 @@ form .buttons button , .Anterior{
       position: relative;
       right: 30%;
       font-size: 12px;
+      
    }
 
 

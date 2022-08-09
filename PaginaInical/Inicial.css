@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Titulo de la paguina (Header)*/
+
+header{
+    height: 50px;
+    background-color: #B0C4DE;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    align-items: center;
+
+}
+ /*Titulo dentro del header*/
+.titleCRM{
+    color:aliceblue ;
+    font-weight: 300;
+}
+
+.titleCRM:hover{
+    color: darkgray;
+    transition: 0.5s;
+    
+}
+
+/*Menu vertical*/
+
+.nav{
+    display: flex;
+    background-color:  #B0E0E6 ;
+    width: 140px;
+    height: 100vh;
+   flex-direction: column;
+   border: 2px solid black;
+   border-top: 0;
+   align-items: center;
+   
+}
+
+.titlemenu{
+    margin: 10px;
+}
+
+.divnav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 3%;
+    align-items: center;
+    
+}
+
+.divnav a{
+    margin: 2vh 0;
+    font-size: 16px;
+}
+
+
+
+.mostrarmenu{
+    font-size: 45px;
+    display: none;
+}
+
+.escondermenu{
+    display: none;
+}
+
+@media(max-width:650px) {
+
+
+.titleCRM{
+    font-size: 6vw;
+    font-size: 4vh;
+}
+
+ .nav{
+    position: relative;
+    z-index: 100;
+    right: 100%;
+    width: 100%;
+    transition: 2s;
+    background-color: #B0E0E6 ;
+ }
+
+ .mostrarmenu{
+    position: absolute;
+    top: 40px;
+    display: block;
+ }
+
+ .escondermenu{
+    display: block;
+    position: relative;
+    right: 40%;
+    font-size: 45px;
+
+ }
+
+    
+}
