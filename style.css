@@ -114,9 +114,14 @@ form .fields .input-field{
 }
 
 .menu:hover {
+   @media (min-width: 768px) {
+      .menu:hover {
+         width: 45%
+      }
+   }
    width: 16.2%;
    height: 100%;
-   background-color: rgba(5, 33, 51, 0.98);
+   background-color: rgba(5, 33, 51, 0.98)
 }
 
 .menu:hover h2 {
