@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.contenedor{
+    display: flex;
+}
+
 /*Titulo de la paguina (Header)*/
 
 header{
