@@ -103,3 +103,42 @@ header{
 
     
 }
+
+.footer {
+    background: #0575e6;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-foot {
+    margin: 16px;
+
+}
+
+.footer-informacion {
+    margin: 10px;
+    
+
+}
+
+ul, li {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-final {
+    text-align: center;
+    padding: 20px;
+}
