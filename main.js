@@ -2,17 +2,29 @@ const paisesLatam = JSON.parse ('[{"#":1,"Paises":"Argentina"},{"#":2,"Paises":"
 
   console.log (paisesLatam)
 
-  llamarPaises = function() {
+  const llamarPaises = () => {
+    let iddeldocumento = document.getElementById('colocar-option')
     for (let index = 0; index < paisesLatam.length; index++) {
-        document.write ( paisesLatam[index].Paises + '<br>');
+      console.log(paisesLatam[index].Paises);
+      let etiquetahtml = document.createElement('option')
+      iddeldocumento.appendChild(etiquetahtml)
+      etiquetahtml.appendChild(document.createTextNode(paisesLatam[index].Paises))
+      // etiquetahtml.innerHTML = paisesLatam[index].Paises
     }
   }
 
   llamarPaises()
 
+const monedaPaises = JSON.parse ('[{"#":1,"Moneda":"Peso argentino"},{"#":2,"Moneda":"Boliviano"},{"#":3,"Moneda":"Real brasileño"},{"#":4,"Moneda":"Peso chileno"},{"#":5,"Moneda":"Peso colombiano"},{"#":6,"Moneda":"Colón costarricense"},{"#":7,"Moneda":"Peso cubano"},{"#":8,"Moneda":"Dólar estadounidense"},{"#":9,"Moneda":"Dólar estadounidense"},{"#":10,"Moneda":"Quetzal"},{"#":11,"Moneda":"Gourde"},{"#":12,"Moneda":"Lempira"},{"#":13,"Moneda":"Peso mexicano"},{"#":14,"Moneda":"Córdoba"},{"#":15,"Moneda":"Balboa y el dólar estadounidense"},{"#":16,"Moneda":"Guaraní"},{"#":17,"Moneda":"Sol"},{"#":18,"Moneda":"Peso dominicano"},{"#":19,"Moneda":"Peso uruguayo"},{"#":20,"Moneda":"Bolívar"}]')
 
-let etiquetahtml = document.createElement('option')
-etiquetahtml.innerHTML = llamarPaises()
+const llamarMonedas = () => {
+  let iddeldocumento = document.getElementById('colocar-html')
+  for (let index = 0; index < monedaPaises.length; index++) {
+    console.log(monedaPaises[index].Moneda);
+    let etiquetahtml = document.createElement('option')
+    iddeldocumento.appendChild(etiquetahtml)
+    etiquetahtml.appendChild(document.createTextNode(monedaPaises[index].Moneda))
+  }
+}
 
-let iddeldocumento = document.getElementById ('colocar-option')
-iddeldocumento.appendChild (etiquetahtml)
+llamarMonedas()
