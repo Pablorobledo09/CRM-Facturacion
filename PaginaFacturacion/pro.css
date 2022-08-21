@@ -34,17 +34,19 @@ form .fields .input-fields {
     flex-direction: column;
     border-radius: 7px;
 }
-.btn {
+
+.buttonlink {
+padding: 15px;
 display: inline;
 align-items: center;
 justify-content: center;
 height:45px;
-max-width: 100px;
-width: 100%;
 border: none;
 color: white;
 border-radius: 15px;
 background-color: grey;
+text-decoration: none;
+font-family: sans-serif;
 }
 
 .divisory-line {
