@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+    <div class="menu">
+        <h2>Menu principal</h2><img height="50%" src="../imagenes/iconomenu.png">
+
+        <ul>
+            <li><a href="../Index.html">Inicio</a></li>
+            <li><a href="../PaginaFacturacion/pro.html">Facturacion</a></li>
+            <li><a href="#">Configuracion</a></li>
+        </ul>
+      </div>
+
+  <div class="container">
+
+    
+      <header>CONFIGURACIÓN</header>
+
+      <form action="/form" method="post">
+          <div class="form first">
+              <div class="configura">
+                  <span class="title">Configuración General</span>
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>Nombre</label>
+                          <input type="text" placeholder=" Nombre" required name="nombre">
+
+
+                      </div>
+                      <div class="input-field">
+                          <label>Nombre de cliente</label>
+                          <input type="text" placeholder=" Nombre" required name="nombrecliente">
+
+
+                      </div>
+                      <div class="input-field">
+                          <label>Apellido</label>
+                          <input type="text" placeholder=" Apellido" required name="apellido">
+
+
+                      </div>
+                      <div class="input-field">
+                          <label>Dirección</label>
+                          <input type="text" placeholder=" Dirección" required name="direccion">
+
+
+                      </div>
+                      <div class="input-field">
+                          <label>Telefono</label>
+                          <input type="number" placeholder=" Telefono" required name="telefono">
+
+
+                      </div>
+                      <div class="input-field">
+                          <label>Email</label>
+                          <input type="email" placeholder=" Email" required name="email">
+
+
+                      </div>
+                      <div class="input-field">
+                          <label>País</label>
+                          <select id="colocar-option" name="pais">
+
+                            </select>
+                      </div>
+                      
+
+                      <div class="form first">
+                          <div class="configura">
+                              <span class="title">Configuración Dirección</span>
+                          
+          
+                             <div class="fields">
+                                  <div class="input-field">
+                                      <label>IVA</label>
+                                      <input type="number" placeholder=" iva" required name="iva">
+                                  </div>
+                                  <div class="input-field">
+                                      <label>Id Fiscal</label>
+                                      <input type="number" placeholder=" Id" required name="idfiscal">
+          
+          
+                                  </div>
+                                  <div class="input-field">
+                                      <label>CBU/Alias</label>
+                                      <input type="number" placeholder=" Cbu/Alias" required name="cbu">
+          
+          
+                                  </div>
+                                  <div class="input-field">
+                                      <label>Número de Factura</label>
+                                      <input type="number" placeholder=" Número" required name="numerofact">
+          
+          
+                                  </div>
+                                  <div class="input-field">
+                                      <label>Número de cliente</label>
+                                      <input type="number" placeholder=" Número" required name="numeroclien">
+          
+          
+                                  </div>
+                                  <div class="input-field">
+                                      <label>Factura número Inicial</label>
+                                      <input type="number" placeholder=" Número">
+          
+          
+                                  </div>
+                                  <div class="input-field">
+                                      <label>Moneda</label>
+                                      <select id="colocar-html" name="moneda">
+                                          
+                                        </select>
+
+                                      
+                                
+          
+          
+                                  </div>
+                                  <div class="input-field">
+                                      <label>Formato de Factura</label>
+                                      <select name="formato">
+                                          <option value="#">SEL-tamaño</option>
+                                          <option value="Formato A4">Formato A4</option>
+                                          <option value="Formato A3">Formato A3</option>
+                                      </select>
+                        </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                </form>
+
+    <footer class="footercontenedor">
+        <div class="contenedordivfooter">
+            <h2 class="titlefooter">CRM EMPRESARIAL</h2>
+           </div>
+    <div class="divlistas">
+      <div class="contenedoreslistas">
+              <h4 id="tituloservicios">Nuestros servicos</h4>
+             <ul class="ul">
+             <li class="li1">Home</li>
+             <li class="li1">Quienes Somos</li>
+            <li class="li1">Nuestro equipo</li>
+           </ul>
+        </div> 
+    <div class="contenedoreslistas" id="contenedorcontacto">
+             <h4 id="titulocontacto">Contacto</h4>
+             <ul class="ul">
+            <li  class="li1"  id="correo">CRMFACTURACION@GMAIL.COM</li>
+            <li class="li1" id="numero">+54 1127484799</li>
+             </ul>
+         </div>
+    <div class="contenedoreslistas">
+            <h4 id="titulodireccion">Direccion</h4>
+            <ul class="ul">
+            <li class="li1">Argentina<br><br>Buenos Aires<br><br>CABA, lavalle 145</li>
+            </ul>
+        </div>
+</footer>
+    
+    <hr>
+<div id="copy">
+    <h4>Derechos de Autor</h4>
+    <p>&copy; GRUPO 2, SPRINT4, 2022</p>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

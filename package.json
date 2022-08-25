@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Pablorobledo09/Nuevo-spring#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "serve-static": "^1.15.0"
   }
 }

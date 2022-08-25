@@ -345,12 +345,12 @@ body {
     top: 25vw;
     right: 2.5vw;
     position: relative;
-    padding-left: 60px;
-    padding: 35px 85px;
+    padding-left: 10%;
+    padding: 15px 55px;
     display: inline;
     align-items: center;
     justify-content: center;
-    height:45px;
+    height:5vh;
     border: none;
     color: white;
     border-radius: 15px;
