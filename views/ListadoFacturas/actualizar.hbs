@@ -1,0 +1,96 @@
+<form action="listadofacturas/actualizar/{{factura._id}}" method="POST">
+  <div class="fields">
+    <div class="input-field">
+      <label>Nombre</label>
+      <input type="text" placeholder=" Nombre" name="nombre" />
+
+    </div>
+    <div class="input-field">
+      <label>Nombre de cliente</label>
+      <input type="text" placeholder=" Nombre" name="nombrecliente" value={{factura.nombre}} /></input>
+
+    </div>
+    <div class="input-field">
+      <label>Apellido</label>
+      <input type="text" placeholder=" Apellido" name="apellido" />
+
+    </div>
+    <div class="input-field">
+      <label>Dirección</label>
+      <input type="text" placeholder=" Dirección" name="direccion" value={{factura.direccion}} />
+
+    </div>
+    <div class="input-field">
+      <label>Telefono</label>
+      <input type="number" placeholder=" Telefono" name="telefono" value={{factura.telefono}} />
+
+    </div>
+    <div class="input-field">
+      <label>Email</label>
+      <input type="email" placeholder=" Email" name="email" value={{factura.email}} />
+
+    </div>
+    <div class="input-field">
+      <label>País</label>
+      <select id="colocar-option" name="pais">
+
+      </select>
+    </div>
+
+    <div class="form first">
+      <div class="configura">
+        <span class="title">Configuración Dirección</span>
+
+        <div class="fields">
+
+          <div class="input-field">
+            <label>IVA</label>
+            <input type="number" placeholder=" iva" name="iva" value={{factura.iva}} />
+          </div>
+          <div class="input-field">
+            <label>Id Fiscal</label>
+            <input type="number" placeholder=" Id" name="idfiscal" value={{factura.idfiscal}} />
+
+          </div>
+          <div class="input-field">
+            <label>CBU/Alias</label>
+            <input type="number" placeholder=" Cbu/Alias" name="cbu" value={{factura.cbu}} />
+
+          </div>
+
+          <div class="input-field">
+            <label>Numero Factura</label>
+            <input type="number" placeholder="Numero" name="nfactura" value={{factura.nfactura}} />
+
+          </div>
+          <div class="input-field">
+            <label>Número de cliente</label>
+            <input type="number" placeholder=" Número" name="ncliente" value={{factura.ncliente}} />
+
+          </div>
+          <div class="input-field">
+            <label>Factura número Inicial</label>
+            <input type="number" placeholder="Numero" name="numeroFacIn" value={{factura.numeroFacIn}} />
+
+          </div>
+          <div class="input-field">
+            <label>Moneda</label>
+            <select id="colocar-html" name="moneda">
+
+            </select>
+
+          </div>
+          <div class="input-field">
+            <label>Formato de Factura</label>
+            <select name="formato">
+              <option value="#">SEL-tamaño</option>
+              <option value="Formato A4">Formato A4</option>
+              <option value="Formato A3">Formato A3</option>
+            </select>
+            <button>Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

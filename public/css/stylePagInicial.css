@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
+*{
+   margin: 1rem;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body{
+   min-height: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: slategrey ;
+}
+.container{
+   position: relative;
+   max-width: 67vw;
+   width: 100%;
+   border-radius: 5px;
+   padding: 1rem;
+   margin:0 1rem;
+   background-color: white;
+   box-shadow: 0 5px 10px black;
+   overflow: hidden;
+}
+.container header{
+   position: relative;
+   font-size: 45px;
+   font-weight: 500;
+   color:darkslategray;
+}
+.container form{
+   position: relative;
+   margin-top: 45px;
+   min-height: 40vw;
+   background-color:white;
+}
+.container form.form{
+   position: absolute;
+}
+
+.container form .title{
+   display: block;
+   margin-bottom: 10px;
+   font-size: 2.1rem;
+   margin: 5px ;
+   color: black
+}
+.container form .fields{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+form .fields .input-field{
+   display: flex;
+   width: calc(100% / 3 - 15px);
+   flex-direction: column;
+   margin: 1.3rem 0;
+}
+.input-field label{
+   font-size: 1rem;
+   color:black
+}
+.input-field input{
+   outline: none;
+   font-size: 15px;
+   font-weight: 350;
+   color: cadetblue;
+   border-radius: 3px;
+   border: 3px solid gainsboro;
+   height: 5.5vh;
+   margin: 8px 0;
+}
+
+.menu {
+   top: -20px;
+   left: -20px;
+   font-family: Arial, Helvetica, sans-serif;
+   height: 10%;
+   position: fixed;
+   transition: .4s all;
+   z-index: 1;
+}
+
+.menu ul {
+   text-align: center;
+}
+
+.menu li {
+   transition: .3s all;
+   overflow: hidden;
+}
+
+.menu a{
+   text-decoration: none;
+   list-style: none;
+   transition: .3s all;
+   font-size: 0px;
+   padding: 0px;
+}
+
+.menu h2 {
+   text-align: center;
+   color: white;
+   padding: 7px;
+   padding-bottom: 7px;
+   font-size: 0px;
+}
+
+.menu img {
+   padding-top: 10px;
+   padding-left: 10px;
+}
+
+.menu:hover {
+   @media (min-width: 768px) {
+      .menu:hover {
+         width: 45%
+      }
+   }
+   width: 16.2%;
+   height: 100%;
+   background-color: rgba(5, 33, 51, 0.98)
+}
+
+.menu:hover h2 {
+   padding: 15px;
+   font-size: 35px;
+}
+
+.menu:hover a{
+   font-size: 20px;
+   color: white;
+   display:block;
+   padding: 20px;
+}
+
+.menu:hover img {
+   height: 0px;
+}
+
+.menu:hover li {
+   border-top: 2px solid black;
+   width: 100%;
+}
+
+.menu:hover a:hover {
+   padding: 30px 0px;
+   background-color: rgba(26, 68, 100, 0.98);
+}
+/*.container form button , .Anterior {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   max-width: 200px;
+   width: 100%;
+   border: none;
+   outline: none;
+   color:white;
+   border-radius: 10px;
+   margin: 30px 0;
+   background-color: gray;
+   transition: all 0.3s linear;
+   cursor: pointer;
+}
+.container form button 
+.container form .Anterior{
+   font-size: 14px;
+   font-weight: 400;
+}
+form button i,
+form .Anterior{
+   margin: 0 5px;
+}
+
+form .buttons{
+   display: flex;
+   align-items: center;
+}
+form .buttons button , .Anterior{
+   margin-right: 15px;
+}*/
+/*footer*/
+.footercontenedor{
+   width: 100%;
+   display: flex;
+   flex-wrap:wrap;
+   border: 2px solid black;
+   border-bottom: 0;
+   border-left: 0;
+   border-right: 0;
+   padding: 0;
+}
+
+.contenedoreslistas{
+   margin: 5px;
+   position: relative;
+   margin-bottom: -6vh;
+   margin: 10px;
+   right: 0%;
+}
+
+.divlistas{ 
+   display: flex;
+   flex-wrap: wrap;
+   margin: 10px;
+
+
+}
+
+.ul{
+   display: flex;
+  flex-direction: column;
+
+}
+
+.li1{
+   list-style-type: none;
+   font-size: 14px;
+   margin: 10px;
+}
+
+
+
+#copy{
+   display: flex;
+   justify-content: center;
+   
+  
+}
+
+.contenedordivfooter{ 
+ align-self: baseline;
+
+
+}
+/*responsive footer*/
+@media screen and (max-width:500px){
+
+   .footercontenedor{
+      position: relative;
+      right: 35%;
+      display: block;
+   }
+.titlefooter{
+   font-size: 16px;
+}
+   .li1{
+      font-size: 13.5px;
+   }
+
+   #correo{
+      position: relative;
+      right: 15%;
+     
+   }
+   
+}
+
+@media  screen and (max-width:350px) {
+   .footercontenedor{
+      position: relative;
+      right: 55%;
+      display: block;
+      transform: 0.3s;
+   }
+
+   .li1{
+      font-size: 12.5px;
+   }
+
+   #correo{
+      position: relative;
+      right: 30%;
+      font-size: 12px;
+      
+   }
+
+
+   
+}
+
+
+

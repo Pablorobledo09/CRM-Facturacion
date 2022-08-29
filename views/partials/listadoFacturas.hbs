@@ -1,0 +1,21 @@
+<tbody>
+                        {{#each listaFacturas}}
+                        <tr>
+                        <td>{{@index}}</td>
+                        <td>{{nombre}}</td>
+                        <td>{{telefono}}</td>
+                        <td>{{ncliente}}</td>
+                        <td>{{formato}}</td>
+
+                            {{#if pagado}}
+                            <td><a href="/listadofacturas/cambiarPagado/{{_id}}">No pagado</td>
+                            {{else}}
+                            <td><a href="/listadofacturas/cambiarPagado/{{_id}}">Pagado</td>
+                            {{/if}}
+
+                        <td><a href="/listadofacturas/eliminar/{{_id}}">Eliminar</td>
+                        <td><a href="/listadofacturas/actualizar/{{_id}}">Editar</td>
+                        </tr>
+                        {{/each}}
+                        
+                    </tbody>
