@@ -1,5 +1,5 @@
 import { application, Router } from "express";
-import Factura from "../models/Factura";
+import Factura from "../models/Factura.js";
 
 const router = Router();
 

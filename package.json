@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backend spring",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon ./index.js --exec babel-node"
   },

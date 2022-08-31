@@ -1,4 +1,4 @@
-import {connect} from "mongoose";
+import mongoose from "mongoose";
 
 (async () => {
     try {

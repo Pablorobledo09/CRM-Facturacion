@@ -6,6 +6,9 @@
 
 .contenedor{
     display: flex;
+    align-content: center;
+    background-image: url("https://ese224.seas.upenn.edu/wp-content/uploads/2018/11/background-website-light-blue-wallpapers-background-2.jpg");
+    
 }
 
 /*Titulo de la paguina (Header)*/
@@ -32,6 +35,9 @@ header{
 }
 
 /*Menu vertical*/
+.main{
+    height: 100vh;
+}
 
 .nav{
     display: flex;
@@ -77,6 +83,7 @@ header{
 @media(max-width:650px) {
 
 
+
 .titleCRM{
     font-size: 6vw;
     font-size: 4vh;
@@ -94,7 +101,12 @@ header{
  .mostrarmenu{
     position: absolute;
     top: 40px;
+    left: 4px;
+    font-size: 50px;
+    height: 40px;
+    width: 50px;
     display: block;
+  
  }
 
  .escondermenu{
@@ -102,6 +114,7 @@ header{
     position: relative;
     right: 40%;
     font-size: 45px;
+    
 
  }
 
@@ -112,6 +125,7 @@ header{
     background: #0575e6;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .titulo-foot {
@@ -139,7 +153,9 @@ a {
 .container {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-around;
+    height: auto;
 }
 
 .footer-final {
@@ -147,11 +163,42 @@ a {
     padding: 20px;
 }
 /* cuerpo*/
-body {
-    background-image: url("https://ese224.seas.upenn.edu/wp-content/uploads/2018/11/background-website-light-blue-wallpapers-background-2.jpg");
+
+
+#listadoBotones{
+    display: flex;
+    width: 70%;
+    justify-items: center;
+    align-items: center;
+   flex-wrap: wrap;
+   position: relative;
+   right: -15%;
+   
+
+
 }
 
-#botonListado1 {
+.botonesbody{
+    display: flex;
+    width: 15vw;   
+    font-size: 5vh;
+    font-size: 1.7vw;
+    height:16vh;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    background-color: rgb(21, 88, 133);
+    color: white;
+   margin: 5%;
+   border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+    text-decoration: none;
+
+}
+
+
+/*#botonListado1 {
     font-size: 25px;
     top: 15vw;
     left: 25vw;
@@ -160,7 +207,7 @@ body {
     display: inline;
     align-items: center;
     justify-content: center;
-    height:45px;
+    height:5vw;
     border: none;
     color: white;
     border-radius: 15px;
@@ -169,7 +216,7 @@ body {
     font-family: sans-serif;
 }
 
-#botonListado1:hover {
+/*#botonListado1:hover {
     font-style: italic;
     font-size: 25px;
     top: 15vw;
@@ -186,64 +233,35 @@ body {
     background-color: rgb(3, 29, 46);
     text-decoration: none;
     font-family: sans-serif;
-}
+}*/
 
 #botonListado2 {
-    font-size: 25px;
-    top: 15vw;
-    left: 30vw;
-    position: relative;
-    padding: 35px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(21, 88, 133);
-    text-decoration: none;
-    font-family: sans-serif;
+  
+    padding: 3%;
+
+
     }
 
-#botonListado2:hover {
-    font-style: italic;
-    font-size: 25px;
-    top: 15vw;
-    left: 30vw;
-    position: relative;
-    padding: 35px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
+.botonesbody:hover {
+    width: 25%;
+    height: 20vh;
     background-color: rgb(3, 29, 46);
-    text-decoration: none;
-    font-family: sans-serif;
+   transition: 0.5s;
     }
 
 #botonListado3 {
-    font-size: 25px;
-    top: 15vw;
-    left: 35vw;
-    position: relative;
-    padding: 35px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(21, 88, 133);
+    
+   
+    padding: 3%;
+   
+   
+   
+   
     text-decoration: none;
-    font-family: sans-serif;
+   
 }
 
-#botonListado3:hover {
+/*#botonListado3:hover {
     font-style: italic;
     font-size: 25px;
     top: 15vw;
@@ -338,28 +356,17 @@ body {
     font-family: sans-serif;
     font-style: italic;
 
-}
+}*/
 
 #botonListado6 {
-    font-size: 25px;
-    top: 25vw;
-    right: 2.5vw;
-    position: relative;
-    padding-left: 10%;
-    padding: 15px 55px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:5vh;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(21, 88, 133);
-    text-decoration: none;
-    font-family: sans-serif;
+    
+   
+   padding: 3%;
+  
+   
 }
 
-#botonListado6:hover {
+/*#botonListado6:hover {
     font-size: 25px;
     top: 25vw;
     right: 2.5vw;
@@ -378,7 +385,37 @@ body {
     font-family: sans-serif;
     font-style: italic;
 
+}*/
+ 
+@media(max-width:650px){
+    #listadoBotones{
+        position: relative;
+       transition: 2s;
+       right: 30%;
+        display: flex;
+        flex: content;
+        
+        
+    
+
+    }
+
+    .botonesbody:hover {
+       width: 31vw;
+        background-color: rgb(3, 29, 46);
+       transition: 0.5s;
+        }
+
+    .botonesbody{
+        margin: 15px 1em 0 auto;
+       height: 10vh;
+       width: 30vw;
+       font-size:small;
+        font-weight:600;
+    }
+
 }
+
 
 @media (max-width: 550px) {
     form .fields .input-field{
@@ -391,6 +428,7 @@ body {
         width: 100%;
     }
 }    
+
 
 
 

@@ -1,4 +1,8 @@
-import { Schema, model } from "mongoose";
+
+import mongoose from "mongoose";
+
+const {Schema} = mongoose
+const {model} = mongoose
 
 const facturaSchema = new Schema(
   {

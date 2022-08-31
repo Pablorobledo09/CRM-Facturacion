@@ -9,11 +9,19 @@ function mover(){
     div.style.display="none"
 };
 
-mostrarmenu.addEventListener('click',mover);
+mostrarmenu.addEventListener('click', mover);
 
 
 function desaparecer(){
     conteiner.style.transform="translateX(0)"
+    
+  
+    div.style.display="flex"
+    
+  
+
+   
+    
 
 
 }

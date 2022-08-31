@@ -1,8 +1,16 @@
 import express from "express";
 import { create } from "express-handlebars";
-import indexRoutes from "./routes/index.routes";
-import path from "path";
+import indexRoutes from "./routes/index.routes.js";
 import morgan from "morgan";
+import path from "path";
+import {fileURLToPath} from 'url';
+
+
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
+
+
 
 const app = express();
 
