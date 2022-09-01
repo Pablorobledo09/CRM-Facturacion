@@ -3,12 +3,8 @@ import Factura from "../models/Factura.js";
 
 const router = Router();
 
-router.get("/", (req, res) => {
-  res.render("index");
-});
-
 //pagina principal
-router.get("/inicio", (req, res) => {
+router.get("/", (req, res) => {
   res.render("./PagInicial/index", {style: "Inicial.css"});
 });
 
