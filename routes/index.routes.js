@@ -10,7 +10,11 @@ router.get("/", (req, res) => {
 });
 
 router.get("/cookies",(req,res)=>{
-  res.render("./cookies/cookies",{style:"cookies.css" })
+  res.render("./cookies/cookies",{style:"cookies.css" })})
+//pagina principal
+router.get("/", (req, res) => {
+  res.render("./PagInicial/index", {style: "Inicial.css"});
+
 });
 
 router.get("/facturacion", (req, res) => {
