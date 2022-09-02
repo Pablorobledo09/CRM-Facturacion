@@ -3,13 +3,14 @@ import Factura from "../models/Factura.js";
 
 const router = Router();
 
-router.get("/", (req, res) => {
-  res.render("index");
-});
 
 //pagina principal
-router.get("/inicio", (req, res) => {
-  res.render("./PagInicial/index", {style: "Inicial.css"});
+router.get("/", (req, res) => {
+  res.render("./PagInicial/index", {style: "Inicial.css", style:"cookies.css"});
+});
+
+router.get("/cookies",(req,res)=>{
+  res.render("./cookies/cookies",{style:"cookies.css" })
 });
 
 router.get("/facturacion", (req, res) => {
@@ -21,6 +22,7 @@ router.get("/ListadoFacturas/", async (req, res) => {
   const listaFacturas = await Factura.find().lean();
   res.render("./ListadoFacturas/pro", {style: "styleListFacturas.css", listaFacturas });
 });
+
 
 //enviar en pagina de facturacion
 router.post("/facturacion/enviar", async (req, res) => {

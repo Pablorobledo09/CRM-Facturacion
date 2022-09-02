@@ -163,6 +163,82 @@ a {
     padding: 20px;
 }
 /* cuerpo*/
+.contenedor-cookies{
+   border: 2px black solid;
+    width: 50vw;
+    position: absolute;
+    top: -10%;
+    display: none;
+    
+}
+
+.cookies{
+    display: flex;
+    padding: 8%;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    background-color :#F5F5F5 ;
+    box-shadow: -3px 0px 39px 17px rgba(0,0,0,0.75);
+    height: 100%;
+    flex: content;
+    
+    
+}
+
+.titulo-cookie{
+  font-size:x-large;  
+  font-style: oblique;
+  font-weight: 700;
+margin: 3%;
+
+
+    
+}
+
+.cookie-bt{
+    margin: 4%;
+    width: 12vw;
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.cookie-bt:hover{
+    color: rgb(216, 213, 213);
+    background-color: darkblue;
+}
+
+.texto-cookie{
+    font-size: 20px;
+}
+
+#mas{
+    display: none;
+}
+
+
+    
+
+
+
+
 
 
 #listadoBotones{
@@ -198,42 +274,8 @@ a {
 }
 
 
-/*#botonListado1 {
-    font-size: 25px;
-    top: 15vw;
-    left: 25vw;
-    position: relative;
-    padding: 35px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:5vw;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(21, 88, 133);
-    text-decoration: none;
-    font-family: sans-serif;
-}
 
-/*#botonListado1:hover {
-    font-style: italic;
-    font-size: 25px;
-    top: 15vw;
-    left: 25vw;
-    position: relative;
-    padding: 35px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(3, 29, 46);
-    text-decoration: none;
-    font-family: sans-serif;
-}*/
+
 
 #botonListado2 {
   
@@ -243,10 +285,10 @@ a {
     }
 
 .botonesbody:hover {
-    width: 25%;
+    width: 23%;
     height: 20vh;
     background-color: rgb(3, 29, 46);
-   transition: 0.5s;
+   transition: 0.4s;
     }
 
 #botonListado3 {
@@ -256,107 +298,12 @@ a {
    
    
    
-   
-    text-decoration: none;
-   
 }
 
-/*#botonListado3:hover {
-    font-style: italic;
-    font-size: 25px;
-    top: 15vw;
-    left: 35vw;
-    position: relative;
-    padding: 35px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(3, 29, 46);
-    text-decoration: none;
-    font-family: sans-serif;
-}
 
-#botonListado4 {
-    font-size: 25px;
-    top: 25vw;
-    right: 12vw;
-    position: relative;
-    padding: 35px 18px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(21, 88, 133);
-    text-decoration: none;
-    font-family: sans-serif;
-}
 
-#botonListado4:hover {
-    font-style: italic;
-    font-size: 25px;
-    top: 25vw;
-    right: 12vw;
-    position: relative;
-    padding: 35px 18px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(3, 29, 46);
-    text-decoration: none;
-    font-family: sans-serif;
-}
 
-#botonListado5 {
-    font-size: 25px;
-    top: 25vw;
-    right: 7.2vw;
-    position: relative;
-    padding-left: 60px;
-    padding: 35px 72px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(21, 88, 133);
-    text-decoration: none;
-    font-family: sans-serif;
 
-}
-
-#botonListado5:hover {
-    font-size: 25px;
-    top: 25vw;
-    right: 7.2vw;
-    position: relative;
-    padding-left: 60px;
-    padding: 35px 72px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(3, 29, 46);
-    text-decoration: none;
-    font-family: sans-serif;
-    font-style: italic;
-
-}*/
 
 #botonListado6 {
     
@@ -366,28 +313,20 @@ a {
    
 }
 
-/*#botonListado6:hover {
-    font-size: 25px;
-    top: 25vw;
-    right: 2.5vw;
-    position: relative;
-    padding-left: 60px;
-    padding: 35px 85px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height:45px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    background-color: rgb(3, 29, 46);
-    text-decoration: none;
-    font-family: sans-serif;
-    font-style: italic;
 
-}*/
  
 @media(max-width:650px){
+    .contenedor-cookies{
+        top: 4%;
+       left: 30%;
+    }
+
+    .titulo-cookie{
+        font-size: medium;
+    }
+    
+    
+    
     #listadoBotones{
         position: relative;
        transition: 2s;
@@ -400,15 +339,22 @@ a {
 
     }
 
+    #desplegar{
+        display: none;
+    }
+
     .botonesbody:hover {
-       width: 31vw;
+        width:30vw;
         background-color: rgb(3, 29, 46);
-       transition: 0.5s;
+       transition: 0.4s;
+       height: 20vh;
+
         }
 
     .botonesbody{
+       
         margin: 15px 1em 0 auto;
-       height: 10vh;
+       height: 12vh;
        width: 30vw;
        font-size:small;
         font-weight:600;

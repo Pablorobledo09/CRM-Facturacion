@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./css/Inicial.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link rel="stylesheet" href="./css/cookies.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -13,7 +14,7 @@
     <title>Document</title>
 
   </head>
-  <body>
+  <body onload="Cookies()">
 
     <header>
       <div class="divHeader">
@@ -22,6 +23,7 @@
     </header>
     <main class="main">
       <div class="contenedor">
+
         <nav class="nav" id="nav">
           <label for="check" class="escondermenu" id="escondermenu">
              &#215
@@ -34,7 +36,7 @@
             <a>Clientes</a>
             <a>Promociones</a>
             <a>¿Quienes Somos?</a>
-          </div>
+          </div-->
         </nav>
 
         <label class="mostrarmenu" id="mostrarmenu">
@@ -42,6 +44,16 @@
         </label>
 
         <div id="listadoBotones">
+          <div id="contenedor-cookies" class="contenedor-cookies">
+           <div class="cookies">
+          <h3 class="titulo-cookie">CRM Facturacion</h3>
+          <h3  class="titulo-cookie" id="aviso-cookie">Su privacidad es importante para nosotros</h3>
+          <div class="contenido"></div>
+          <p class="texto-cookie">Nosotros y nuestros socios almacenamos o accedemos a información en un dispositivo, tales como cookies, y procesamos datos personales, tales como identificadores únicos e información estándar enviada por un dispositivo, para anuncios y contenido personalizados, medición de anuncios y del contenido <a href="/cookies" id="mas">...Leer mas</a></p><span id="desplegar" class="texto-cookie"> e información sobre el público, así como para desarrollar y mejorar productos. Con su permiso, nosotros y nuestros socios podemos utilizar datos de localización geográfica precisa e identificación mediante las características de dispositivos. Puede hacer clic su consentimiento a nosotros y a nuestros socios para que llevemos a cabo el procesamiento previamente descrito. De forma alternativa, puede acceder a información más detallada y cambiar sus preferencias antes de otorgar o negar su consentimiento. Tenga en cuenta que algún procesamiento de sus datos personales puede no requerir de su consentimiento, pero usted tiene el derecho de rechazar tal procesamiento. Sus preferencias se aplicarán solo a este sitio web. Puede cambiar sus preferencias en cualquier momento entrando de nuevo en este sitio web o visitando nuestra política de privacidad.</span>
+          <button class="cookie-bt" id="aceptar-bt" value="aceptar">Aceptar terminos y condiciones</button>
+          <button class="cookie-bt" id="configuracion-bt" href="#">Configuracion</button>
+           </div>
+        </div>
           <a  class="botonesbody" id="botonListado1" href="/ListadoFacturas">Facturas</a>
           <a class="botonesbody" id="botonListado2" href="/Facturacion"> Confeccionar Factura</a>
           <a class="botonesbody"
@@ -103,6 +115,7 @@
 
     </footer>
     <script src="./js/inicial.js"></script>
+    
 
   </body>
 </html>
