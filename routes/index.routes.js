@@ -11,11 +11,10 @@ router.get("/", (req, res) => {
 
 router.get("/cookies",(req,res)=>{
   res.render("./cookies/cookies",{style:"cookies.css" })})
-//pagina principal
-router.get("/", (req, res) => {
-  res.render("./PagInicial/index", {style: "Inicial.css"});
 
-});
+router.get('/configCookies',(req,res)=>{
+  res.render("./cookies/configCookies/configCookies")
+})
 
 router.get("/facturacion", (req, res) => {
   res.render("./facturacion/facturacion",{ style: "styleFacturacion.css", js : "mainFacturacion.js"});

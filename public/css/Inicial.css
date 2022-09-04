@@ -71,6 +71,7 @@ header{
 
 
 
+
 .mostrarmenu{
     font-size: 45px;
     display: none;
@@ -101,7 +102,7 @@ header{
  .mostrarmenu{
     position: absolute;
     top: 40px;
-    left: 4px;
+    left:5px;
     font-size: 50px;
     height: 40px;
     width: 50px;
@@ -116,9 +117,13 @@ header{
     font-size: 45px;
     
 
+
+
  }
 
-    
+
+
+
 }
 
 .footer {
@@ -218,6 +223,7 @@ margin: 3%;
   width: fit-content;
   word-break: break-word;
   border: 0;
+  transition: 0.6s;
 }
 
 .cookie-bt:hover{
@@ -229,13 +235,17 @@ margin: 3%;
     font-size: 20px;
 }
 
-#mas{
-    display: none;
-}
-
 
     
+.cookie-bt a {
+    
+    color: #FFFFFF;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 
+ 
+}
 
 
 
@@ -325,7 +335,15 @@ margin: 3%;
         font-size: medium;
     }
     
+    .cookie-bt a {
     
+        color: #FFFFFF;
+        font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    
+     
+    }
     
     #listadoBotones{
         position: relative;
@@ -339,9 +357,6 @@ margin: 3%;
 
     }
 
-    #desplegar{
-        display: none;
-    }
 
     .botonesbody:hover {
         width:30vw;
@@ -349,6 +364,10 @@ margin: 3%;
        transition: 0.4s;
        height: 20vh;
 
+        }
+
+        #desplegarrr{
+            display: none;
         }
 
     .botonesbody{
