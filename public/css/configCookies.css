@@ -83,10 +83,11 @@
   }
 
   .container-items{
-    width: 55vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     margin: 4%;
+    align-self: center;
     align-items: center;
    
  

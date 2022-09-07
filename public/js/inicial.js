@@ -1,8 +1,8 @@
+
+
 /*menu desplegable*/ 
-let mostrarmenu = document.getElementById("mostrarmenu")
-let conteiner = document.getElementById("nav")
-let escondermenu = document.getElementById("escondermenu")
-let div =document.getElementById('listadoBotones')
+
+const div =document.getElementById('listadoBotones')
 /* cookies*/
 const cookieContainer = document.getElementById('contenedor-cookies')
 let botonAcept = document.getElementById('aceptar-bt')
@@ -39,28 +39,51 @@ botonAcept.addEventListener('click', aceptarCookies)
 
 
 /*funciones de menu desplegable en version celular*/
-function mover(){
-    conteiner.style.transform="translateX(100%)"
-    div.style.display="none"
-};
-
-mostrarmenu.addEventListener('click', mover);
 
 
-function desaparecer(){
-    conteiner.style.transform="translateX(0)"
-    
-  
-    div.style.display="flex"
-    
-  
+fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
+.then(response=>response.json())
+.then(dataPoints=>{
+const divCompra = document.getElementById('compra')
+const divVenta = document.getElementById('venta')
+const valorVenta = document.getElementById('valorVenta')
+const valorCompra = document.getElementById('valorCompra')
+const primera = dataPoints.map(B=>{return B.casa})
+const nombresDelosDolares = primera.map(B=>{return B.nombre})
+const precioDeldolarVenta= primera.map(B=>{return B.venta})
+const precioDeldolarCompra= primera.map(D=>{return D.compra})
 
-   
-    
+//Nombres de los dolares
+for(let i=0;i<primera.length;i++){
 
-
+const creacionParrafoC =document.createElement('option')
+creacionParrafoC.textContent= nombresDelosDolares[i]
+divCompra.appendChild(creacionParrafoC)
+creacionParrafoC.classList.add('valorDeCompra')
+}
+for( let i=0;i<primera.length;i++){
+    const ParrafoV =document.createElement('option')
+ParrafoV.textContent= nombresDelosDolares[i]
+divVenta.appendChild(ParrafoV)
+ParrafoV.classList.add('valorDeVenta')
 }
 
-escondermenu.addEventListener('click',desaparecer);
+//selectores de los dolares
+divCompra.addEventListener('change',(event)=>{
+ valorCompra.textContent= precioDeldolarCompra[event.target.selectedIndex]
+ 
+    
+    } )
+
+
+divVenta.addEventListener('change',(event)=>{
+valorVenta.textContent= precioDeldolarVenta[event.target.selectedIndex]
+
+           
+           } )
+       
+
+
+})
 
 
